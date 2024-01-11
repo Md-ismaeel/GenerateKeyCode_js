@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, green, transparent);
+}
+
+.box {
+  width: 350px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: paleturquoise;
+  cursor: pointer;
+  filter: drop-shadow(1px 2px 2px white);
+}
+
+.box .container {
+  display: none;
+}
+.active .container {
+  display: block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.text {
+  font-size: 30px;
+  color: darkgreen;
+  margin-bottom: 15px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.keyCode {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid darkgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: darkgreen;
+}
+.keyName {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  color: darkgreen;
+}
+.details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.details p:nth-child(2) {
+  border-left: 1px solid darkgreen;
+}
+
+.details p {
+  color: brown;
+  font-size: 18px;
+}
+
+.details p span {
+  margin-left: 5px;
+}
+
+.code {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
